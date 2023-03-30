@@ -1,0 +1,27 @@
+nav.navbar{
+    background-color: var(--second-color);
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    margin: 0;
+}
+.navbar .container{
+    max-width: 80%;
+}
+.nav-item{
+    margin-inline: 5px;
+}
+a.nav-link{
+    color: var(--light-color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+a.nav-link:hover,
+a.nav-link:focus{
+    background-color: var(--main-color);
+    color: var(--light-color);
+}

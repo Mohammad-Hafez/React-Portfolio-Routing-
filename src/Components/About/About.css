@@ -1,0 +1,32 @@
+.about{
+    background-color: var(--main-color);
+    color: var(--light-color) ;
+}
+.aboutHeader .starContainer::before{
+    background-color: var(--light-color) !important;
+}
+.aboutHeader .starContainer::after{
+    background-color: var(--light-color) !important;
+}
+.aboutContent{
+    width: 60%;
+    margin-inline: auto;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+@media screen and (max-width : 1200px) {
+    .aboutContant{
+        width: 70%;
+    }
+}
+@media screen and (max-width : 990px) {
+    .aboutContant{
+        width: 90%;
+    }
+}
+@media screen and (max-width : 600px) {
+    .aboutContant{
+        width: 100%;
+    }
+}
+

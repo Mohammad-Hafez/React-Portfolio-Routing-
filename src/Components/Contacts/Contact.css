@@ -1,0 +1,45 @@
+.contactHeader .starContainer::before{
+    background-color: var(--second-color) !important;
+}
+.contactHeader .starContainer::after{
+    background-color: var(--second-color) !important;
+}
+input.form-control,
+textarea.form-control{
+    border: none;
+    border-bottom: 2px solid #e9ecef;
+}
+input.form-control:focus,
+textarea.form-control:focus{
+    color: #212529;
+    background-color: #fff;
+    border-bottom-color: var(--main-color);
+    outline: 0;
+    box-shadow: 0 0.25rem #159a7f62;
+}
+.form-floating>textarea.form-control{
+    resize: none;
+    height: 150px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sendBtn{
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 20px;
+    padding-inline: 30px;
+    padding-block: 20px;
+    color: var(--light-color);
+    font-size: 1.1rem;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.sendBtn:hover{
+    background-color: #159a80;
+    border-color: #148f77;
+}

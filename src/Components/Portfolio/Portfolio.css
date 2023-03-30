@@ -1,0 +1,119 @@
+#portfolio{
+    position: relative;
+}
+.portfolioHeader{
+    color: var(--second-color) !important;
+}
+.portfolioHeader .starContainer::before{
+    background-color: var(--second-color) !important;
+}
+.portfolioHeader .starContainer::after{
+    background-color: var(--second-color) !important;
+}
+.innerImg{
+    position: relative;
+    cursor: pointer;
+}
+.overlay{
+position: absolute;
+inset: 0;
+background-color: var(--main-color); 
+opacity: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all .5s;
+}
+.innerImg:hover .overlay{
+    opacity: .9;
+}
+.lightBox{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    padding: 30px;
+}
+.lightBoxContainer{
+    height: 100%;
+    width: 70%;
+    margin-inline: auto;
+    background-color: var(--light-color);
+    padding: 30px;
+    position: relative;
+    z-index: 999;
+}
+.lightBoxImg{
+    width: 60%;
+    margin-inline: auto;
+    margin-bottom: 20px;
+   
+}
+.lightBoxData{
+    width: 90%;
+    margin-inline: auto;
+    text-align: center;
+}
+#closeIcon{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: var(--main-color);
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+.closeBtn{
+    background-color: var(--main-color);
+    color: var(--light-color);
+    padding-inline: 20px;
+    padding-block: 10px;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+@media screen and (max-width :1400px) {
+    .lightBoxImg{
+        width: 50%;
+    }
+    .lightBoxContainer{
+        width: 80%;
+        font-size: 80%;
+    }
+/* .lightboxHeader{
+    font-size: 70%;
+} */
+}
+@media screen and (max-width :1200px) {
+    .lightBoxContainer{
+        width: 95%;
+        font-size: 80%;
+    }
+    .lightBoxContainer{
+        width: 90%;
+        font-size: 80%;
+    }
+    .lightboxContent{
+        display: flex;
+        align-items: center;
+    }
+    .lightBoxImg{
+        margin-right: 10px;
+    }
+    
+
+}
+@media screen and (max-width :768px) {
+    .lightBoxContainer{
+height: fit-content;    }
+.lightboxContent{
+    flex-direction: column;
+}
+.lightBoxImg{
+    margin-inline: auto;
+
+}
+
+}

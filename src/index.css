@@ -1,13 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Nunito&family=Poppins&family=Roboto&display=swap');
+:root{
+  --main-color:#1ABC9C;
+  --second-color:#2C3E50;
+  --light-color:white;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+.starContainer{
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-inline: auto;
+  font-size: 2rem;
+}
+.header{
+  margin-inline: 1.75rem;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.sectionHeader{
+  width: fit-content; 
+  margin-inline: auto;
+}
+.starContainer::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%;
+  height: 4px;
+  border-radius: 5px;
+  background-color: transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.starContainer::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%;
+  height: 4px;
+  border-radius: 5px;
+  background-color: transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
